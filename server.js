@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path')
 const hbs = require('express-handlebars')
+const port = process.env.PORT || 3000;
+
 
 app.use(express.json())
 
@@ -17,9 +19,10 @@ app.engine('hbs', hbs({
     partialsDir: path.join(__dirname, 'views/partials')
 }))
 
+//connect mongo db
+require('./server/database/database')();
 
-app.get('/', function (req, res) {
-    res.render('main');
-})
+//calling route
+app.use('/', require('./server/router/router'))
 
-app.listen(3000);
+app.listen(port);

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+.shadow{
+    box-shadow: 0 8px 6px -6px black;    
+}
+body{
+font-family: 'RocknRoll One', sans-serif;
+}
+.bg-nav{
+    background: #F0C27B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:white;
+}
+.btn{
+    background: #F0C27B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
